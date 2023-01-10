@@ -3,7 +3,7 @@ import requests, json
 def news(input):
     link = requests.get(
     "https://newsapi.org/v2/everything?q=" + input +
-    "&from=2022-12-06&sortBy=publishedAt&apiKey=41e0c9be6ba340a185222e9f02f6ef89")
+    "&from=2023-01-01&sortBy=publishedAt&apiKey=41e0c9be6ba340a185222e9f02f6ef89")
 
     jsonREQ = json.loads(link.text)
 
